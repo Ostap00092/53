@@ -1,0 +1,47 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+body{
+    margin: 0;
+    overflow: hidden;
+    font-family: sans-serif;
+}
+#messages{
+    height: 88vh;
+    overflow-x: hidden;
+    padding: 10px;
+    background-color: grey;
+}
+form{
+    display: flex;
+}
+input{
+    font-size: 1.2em;
+    padding: 10px;
+    margin: 10px 5px;
+    appearance: none;
+    -webkit-appearance: none;
+    border: solid #ccc 1px;
+    border-radius:5px;
+}
+#message {
+    flex:2;
+    outline:none;
+}
+.msg{
+    background:#dcf8c6;
+    padding:5px 10px;
+    border-radius: 5px;
+    margin-bottom: 8px;
+    width:fit-content;
+}
+.msg p{
+    margin: 0;
+    font-weight: bold;
+}
+.msg span {
+    font-size: 0.7em;
+    margin-left: 15px;
+}

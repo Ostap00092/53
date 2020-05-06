@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles2.css">
+    <link rel="icon" a href="images/logo.png">
+    <title>Регистрация</title>
+</head>
+<body>
+    <div class="img">
+        <img class="img" src="images/logo.png" alt="">
+    </div>
+    <form action="uploads/reg.php" method="POST">
+        <input type="text" name="login" placeholder="Логин">
+        <input type="text" name="name" placeholder="Имя">
+        <input type="text" name="lastname" placeholder="Фамилия">
+        <div class="btns">
+            <input type="radio" name="role" value="1">Учитель
+            <input type="radio" name="role" value="2">Ученик
+        </div>
+        
+        <input type="password" name="password" placeholder="Пароль">
+        <a class="zab" href="">Забыли пароль?</a>
+        <input type="submit" value="Регистрация">
+    </form>
+</body>
+</html>

@@ -1,0 +1,231 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:sans-serif;
+    text-decoration: none;
+}
+body{
+    position: relative;
+    height:100vh;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+body::-webkit-scrollbar{
+    width:10px;
+}
+body::-webkit-scrollbar-thumb{
+    width:6px;
+    background-color:grey;
+    border-radius: 3px;
+}
+body::-webkit-scrollbar-track{
+    width:6px;
+    background-color:white;
+}
+.search {
+    height: 50px;
+    width: 90%;
+    position:relative;
+}
+.lypa {
+    position: absolute;
+    height:30px;
+    width:auto;
+    top:10px;
+    left:26%;
+}
+.cont {
+    position: absolute;
+    right:0;
+    top:0;
+    width:12%;
+    height:100%;
+    background-color: #054356;
+    cursor: pointer;
+}
+#poisk {
+    display:block;
+    height:100%;
+    width:88%;
+    border:none;
+    outline:none;
+    font-size:20px;
+    padding-left:16px;
+}
+.classes, .messages {
+    position: relative;
+    height:50%;
+    width:100%;
+}
+.classes a, .messages a{
+    display:block;
+    padding: 20px 0;
+    font-size:24px;
+}
+.class {
+    height:calc(100% - 50px);
+    width: 38%;
+    background:white;
+    position:relative;
+    margin-left: 10px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+.dob {
+    position: relative;
+    color: grey;
+}
+.plus {
+    display: block;
+    height:150px;
+    width:auto;
+    cursor: pointer;
+}
+.class .line {
+    display: block;
+    height:2px;
+    width:90%;
+    background-color:#93DAFA;
+    margin-left: 5%;
+    border:0;
+}
+.humans {
+    margin-top: 10px;
+    margin-left:calc(5% + 5px);
+    height:40%;
+    width:90%;
+    position:relative;
+    display:flex;
+    justify-content: flex-start;
+    align-items:center;
+}
+.ava {
+    display:inline-block;
+    height:35px;
+    width:35px;
+    border-radius:50%;
+    background-color: dimgrey;
+    margin-left: -5px;
+}
+.add{
+    color:#124D5F;
+}
+.join {
+    height:30%;
+    width:90%;
+    margin-left: 5%;
+    background-color:#054356;
+    position: relative;
+    cursor:pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.join a {
+    color:#76C7EB;
+    text-align: center;
+}
+.message {
+    height:100px;
+    width: 100%;
+    background-color: #fff;
+    position:relative;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    border-bottom:solid #AEAEAE 2px;
+}
+.user{
+    display: inline-block;
+    height:100%;
+    width:130px;
+    display: flex;
+    align-items: center;
+    padding:10px;
+}
+.photo {
+    display: inline-flex;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: #7C7C7C;
+}
+.dan {
+    height:48px;
+    width:auto;
+    display: inline-block;
+    position: relative;
+    margin-left: 5px;
+}
+.name {
+    position:absolute;
+    top:0;
+    left:0;
+    color:#929292;
+    font-size: 18px;
+}
+.date {
+    font-size: 10px;
+    position:absolute;
+    bottom:5px;
+    left:0;
+    color:#929292;
+}
+.theme {
+    height: auto;
+    width: auto;
+    padding:5px 8px;
+    color:#054356;
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #B6B7B7;
+}
+#text {
+    width: auto;
+    height:70%;
+    font-size: 17px;
+    display: inline-flex;
+    align-items: center;
+    margin-left: 3px;
+    color:#7C7C7C;
+}
+@media screen and (max-width:1050px){
+    .class{
+        width:300px;
+        height:300px;
+        float: left;
+        margin-top: 10px;
+    }
+    .classes, .messages{
+        height:70vh;
+        overflow-y: scroll;
+    }
+}
+@media screen and (max-width:624px) {
+    .classes, .messages {
+        min-height:100px;
+        height: auto;
+    }
+    .center{
+        margin-top: 10px;
+    }
+}
+@media screen and (max-width:550px){
+    .user{
+        display: none;
+    }
+    #poisk{
+        width:75%;
+    }
+    .cont{
+        width:25%;
+    }
+}

@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    background-color: #eeeeee;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.main {
+    width: 100%;
+    height: 100vh;
+    background-color: #ffffff;
+    position: relative;
+}
+.upTittle {
+    width: 100%;
+    height: 100px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+}
+.upTittle a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 24px;
+}
+/* нижный блок */
+.bottomBlock {
+    width: 100%;
+    height: calc(100% - 100px);
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+/* чат */
+.chat {
+    background-color: #eeeeee;
+    height:90%;
+    width: 90%;
+}
